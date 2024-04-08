@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<body>
+    <div class="top-banner">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="/"> Home</a>
+            <a href="/about">About Me</a>
+            <a href="/contact">Contact Me</a>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="myimage">
+            <img src="/static/RP-2.JPG" alt="image">
+        </div>
+        <div class="about">
+            <h1>
+                About Malvin
+            </h1>
+            <p>
+                I am an accomplished and dedicated Data Science professional with a fervent commitment to academic excellence and
+                continuous self-improvement. Graduating with an Honors degree in Data Science from Sol Plaatje University, I have
+                demonstrated proficiency in various areas including Advanced Machine Learning, Big Data, and Data Security. My academic
+                journey, completed in record time with eight distinctions, reflects my dedication to mastering complex concepts and
+                pushing the boundaries of knowledge in the field.
+            </p>
+            <p>
+                With a passion for innovation and problem-solving, I have successfully applied my skills in diverse projects, ranging
+                from developing a Skin Cancer Detection system to implementing a Hybrid Cipher Encryption App. Proficient in programming
+                languages such as Python and R, as well as utilizing technologies like Docker and AWS, I am adept at translating data
+                into actionable insights and driving impactful results through technological innovation.
+            </p>
+            <p>
+                Throughout my academic and professional journey, I have honed my collaboration, communication, and critical thinking
+                skills, enabling me to excel in team environments and deliver exceptional work consistently. My participation in
+                hackathons and receipt of awards for innovation underscore my ability to apply theoretical knowledge to real-world
+                challenges and deliver tangible solutions.
+            </p>
+            <p>
+                Driven by a perpetual desire for learning and growth, I am enthusiastic about embracing new challenges and leveraging my
+                expertise to make meaningful contributions in the field of Data Science. With a commitment to excellence and a
+                dedication to pushing the boundaries of what is possible, I am poised to embark on the next chapter of my professional
+                journey, where I can continue to drive innovation and drive positive change.
+            </p>
+        </div>
+    </div>
+</body>
+<style>
+    .top-banner {
+            background-color: white;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    }
+    .logo img {
+        max-height: 100px;
+    }
+    .nav-links {
+            text-align: right;
+        }
+
+    .nav-links a {
+            color: black;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+    .nav-links a:hover {
+            text-decoration: underline;
+        }
+    .middle {
+        display: flex;
+        margin-left: 10%;
+    }
+    .myimage img{
+        height: 450px;
+        border-radius: 100%;
+        box-shadow: 0 4px 8px;
+        margin-top: 5%;
+    }
+    .about {
+        margin-left: 6%;
+        margin-right: 8%;
+        font-family: monospace;
+        text-align: justify;
+    }
+</style>
+</html>

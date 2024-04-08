@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <div class="top-banner">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="/"> Home</a>
+            <a href="/about">About Me</a>
+            <a href="/contact">Contact Me</a>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="video">
+            <video height="300" width="600" controls src="/static/vecteezy_introduction-bienvenue-pour-presentation_2016230.mp4" type="video/mp4"></video>
+        </div>
+    </div>
+    <div class="lower-middle">
+        <div class="profile-text">
+            <h1 class="name">Malvin Maposa</h1>
+            <p class="profile">Profile: Accomplished and dedicated Data Science professional with an honors degree, showcasing a fervent commitment to
+            academic excellence. Proven adeptness in approaching tasks with maturity and efficiency, consistently meeting project objectives with a focus on maintaining the highest standards of quality. Committed to collaborative success, I excel in team environments, contributing effectively to ensure accurate and outstanding outcomes. As a perpetual learner, I actively pursue continuous self-improvement, demonstrating unwavering consistency in delivering exceptional work. Proficient in data
+            processing, visualization, and programming, I am poised to leverage my skills to drive impactful results through technological innovation.
+            </p>
+        </div>
+        
+        <div class="pp">
+            <img src="/static/WhatsApp Image 2022-07-18 at 20.07.06.jpeg" alt="Profie Pic">
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="bottom">
+        <div class="address">
+            <h3>Address</h3>
+            <p style="margin-bottom: -10%;">54 Crestone Hills</p>
+            <p style="margin-bottom: -10%;">Wild Olive str</p>
+            <p style="margin-bottom: -10%;">Bloemfontein</p>
+            <p style="margin-bottom: -10%;">9301</p>
+            <p>+27 72 316 8825</p>
+        </div>
+        <div class="additional-links">
+            <div>
+                <a href="linkedin.com/in/malvin-maposa/">
+                    <img src="/static/linkedin.png" alt="linkedin">
+                    malvin-maposa
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/Malvin-Maposa">
+                    <img src="/static/github.png" alt="github">
+                    Malvin-Maposa
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="lower-bottom">
+        <div class="links">
+            <div class="twitter">
+                <a href="https://twitter.com/malvinmaposa14">
+                    <img src="/static/twitter.png" alt="twitter">
+                    @malvinmaposa14
+                </a>
+            </div>
+            <div class="facebook">
+                <a href="https://www.facebook.com/malvin.maposa.54">
+                    <img src="/static/facebook.png" alt="facebook">
+                    Malvin Maposa
+                </a>
+            </div>
+            <div class="insta">
+                <a href="https://www.instagram.com/malvin_r_maposa/">
+                    <img src="/static/instagram.png" alt="instagram">
+                    malvin_r_maposa
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    .top-banner {
+            background-color: white;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    }
+    .logo img {
+        max-height: 100px;
+    }
+    .nav-links {
+            text-align: right;
+        }
+
+    .nav-links a {
+            color: black;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+    .nav-links a:hover {
+            text-decoration: underline;
+        }
+    .video {
+        border: 2px solid black;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 10px;
+        text-align: center;
+    }
+    .video img {
+        max-height: 400px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .lower-middle {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 4%;
+        margin-left: 13%;
+        margin-right: 10%;
+    }
+    .profile {
+        flex: 1;
+        padding-right: 10%;
+    }
+    .profile-text {
+        flex: 1;
+        margin-top: -2%;
+    }
+    .pp{
+        flex: 1;
+    }
+    .pp img{
+        margin-left: 40%;
+        border-radius: 50%;
+        height: 250px;
+        box-shadow: 0 4px 8px;
+    }
+    .line {
+        margin-top: 2%;
+        width: 100%;
+        height: 1px;
+        background-color: black;
+    }
+    .bottom {
+        display: flex;
+        margin-left: 10%;
+    }
+    .address {
+        margin-right: 25%;
+    }
+    .additional-links a {
+        text-decoration: none;
+        color: black;
+    }
+    .additional-links a:hover {
+        text-decoration: underline;
+    }
+    .lower-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 9%;
+    }
+    .links {
+        display: flex;
+    }
+    .links a {
+        text-decoration: none;
+        color: black;
+    }
+    .links a:hover {
+        text-decoration: underline;
+    }
+
+    .additional-links img {
+        height: 40px;
+    }
+    .twitter img {
+        height: 40px;
+    }
+    .facebook img {
+        height: 40px;
+    }
+    .insta img {
+        height: 40px;
+    }
+</style>
+</html>
