@@ -3,6 +3,8 @@ This is the task assigned to complete a personal portfolio. This Task was accomp
 3 pages of the Portfolio were complete which include the general home scree, a Contact Me page and an About Me page
 Static folders contain all necessary images used in this portfolio, Asset folder contains all necessary screenshots. Lastly templates folder contains all codes necessary
 The images below are part of the home page
+
+## Home Page
 ![GitHub Logo](/assets/image.png)
 ![GitHub Logo](/assets/image2.png)
 
